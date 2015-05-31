@@ -1,0 +1,16 @@
+.body, html {
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3 {
+  margin: 0; padding: 0;
+}
+/*
+  flexbox editor
+  http://the-echoplex.net/flexyboxes/
+*/
+
+/*
+Mozilla
+  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
+*/
