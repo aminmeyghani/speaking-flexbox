@@ -5,6 +5,37 @@
 h1,h2,h3 {
   margin: 0; padding: 0;
 }
+.hljs.remark-code {
+  font-size: 30px;
+}
+.red {
+  color: #ca2521;
+}
+.solid {
+  color: #000;
+}
+.medium {
+  font-size: 30px;
+}
+.medium2 {
+  font-size: 40px;
+}
+.large {
+  font-size: 60px;
+}
+.remark-slide-content h1 {
+  font-size: 70px;
+}
+.svg-container {
+  height: 0;
+  width: 100px
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
 /*
   flexbox editor
   http://the-echoplex.net/flexyboxes/
@@ -14,3 +45,49 @@ h1,h2,h3 {
 Mozilla
   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
 */
+.container {
+  display: flex;
+}
+.code {
+  flex: 1 0 auto;
+}
+.result {
+  flex: 1 0 auto;
+  padding-left: 20px;
+}
+.code {
+  border-right: 1px solid #000;
+}
+
+.box1, .box1-r {
+  display: flex;
+}
+.box1-r {
+  flex-direction: row-reverse
+}
+.item1 {
+  border: 1px solid #000;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-c {
+  border: 1px solid #000;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}

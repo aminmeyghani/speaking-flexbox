@@ -16,54 +16,281 @@
       font-weight: normal;
     }
     .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    .remark-slide-content { background-color: #efede2;}
   </style>
 </head>
 
   <body>
     <textarea id="source">
 
-class: center, middle
+layout: true
+background-image: url(bg.png)
+---
 
-# Title
+class: left, middle
+
+
+
+# Speaking <span class="red">Flexbox</span>
+
+`Flexbox, tips & tricks`
+
+`git clone git@github.com:aminmeyghani/speaking-flexbox.git`
 
 ---
 
-# Agenda
-
-1. Introduction
-2. Deep-dive
-3. ...
-background-image: url(bb.png)
-
-Code:
-
-```ruby
-def add(a,b)
-  a + b
-end
+class: center, middle
+# But why <span class="red">Flexbox</span>?
+## I love my `floats` and
+```css
+position: absolute !important
 ```
+
+---
+class: center, middle
+# The Basics
+<h2><span class="red">Flex</span> Container</h2>
+
+---
+
+# And there was the <span class="red">container</span>
 
 ```css
-.container {
-  display: flex;
+.box {
+  display: flex; /* magic */
 }
 ```
-<div> <h2>this is html</h2> </div>
+<div style="width: 100%">
+  <?xml version="1.0" encoding="utf-8"?>
+  <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 882 247.156" enable-background="new 0 0 882 247.156" xml:space="preserve">
+  <rect x="4.77" y="6.218" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="872.941" height="236.639"/>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="10.805" y1="133.156" x2="16.805" y2="133.156"/>
 
-<div class="container">
-  <div class="item">x</div>
-  <div class="item">x</div>
-  <div class="item">x</div>
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="11.9559,11.9559" x1="28.761" y1="133.156" x2="859.698" y2="133.156"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="865.676" y1="133.156" x2="871.676" y2="133.156"/>
+      <g>
+        <path d="M4.77,133.156c2.84,1.054,6.363,2.852,8.547,4.756l-1.72-4.756l1.72-4.755C11.133,130.305,7.61,132.103,4.77,133.156z"/>
+      </g>
+      <g>
+        <path d="M877.711,133.156c-2.84,1.054-6.363,2.852-8.547,4.756l1.72-4.756l-1.72-4.755
+          C871.348,130.305,874.871,132.103,877.711,133.156z"/>
+      </g>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 18 162.1558)" font-family="'MyriadPro-Regular'" font-size="24.6187">start</text>
+  <text transform="matrix(1 0 0 1 832 162.1558)" font-family="'MyriadPro-Regular'" font-size="24.6187">end</text>
+  <g>
+    <rect x="135" y="89.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="232,169.156 232,175.156 226,175.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="213.857" y1="175.156" x2="147.071" y2="175.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="141,175.156 135,175.156 135,169.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="135" y1="158.584" x2="135" y2="100.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="135,95.156 135,89.156 141,89.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="153.143" y1="89.156" x2="219.929" y2="89.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="226,89.156 232,89.156 232,95.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="232" y1="105.727" x2="232" y2="163.87"/>
+    </g>
+  </g>
+  <g>
+    <rect x="242" y="89.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="339,169.156 339,175.156 333,175.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="320.857" y1="175.156" x2="254.071" y2="175.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="248,175.156 242,175.156 242,169.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="242" y1="158.584" x2="242" y2="100.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="242,95.156 242,89.156 248,89.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="260.143" y1="89.156" x2="326.929" y2="89.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="333,89.156 339,89.156 339,95.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="339" y1="105.727" x2="339" y2="163.87"/>
+    </g>
+  </g>
+  <g>
+    <rect x="349" y="89.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="446,169.156 446,175.156 440,175.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="427.857" y1="175.156" x2="361.071" y2="175.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="355,175.156 349,175.156 349,169.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="349" y1="158.584" x2="349" y2="100.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="349,95.156 349,89.156 355,89.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="367.143" y1="89.156" x2="433.929" y2="89.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="440,89.156 446,89.156 446,95.156    "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="446" y1="105.727" x2="446" y2="163.87"/>
+    </g>
+  </g>
+  <g>
+    <rect x="454" y="132.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="551,212.156 551,218.156 545,218.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="532.857" y1="218.156" x2="466.071" y2="218.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="460,218.156 454,218.156 454,212.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="454" y1="201.584" x2="454" y2="143.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="454,138.156 454,132.156 460,132.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="472.143" y1="132.156" x2="538.929" y2="132.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="545,132.156 551,132.156 551,138.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="551" y1="148.727" x2="551" y2="206.87"/>
+    </g>
+  </g>
+  <g>
+    <rect x="562" y="100.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="659,180.156 659,186.156 653,186.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="640.857" y1="186.156" x2="574.071" y2="186.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="568,186.156 562,186.156 562,180.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="562" y1="169.584" x2="562" y2="111.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="562,106.156 562,100.156 568,100.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="580.143" y1="100.156" x2="646.929" y2="100.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="653,100.156 659,100.156 659,106.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="659" y1="116.727" x2="659" y2="174.87"/>
+    </g>
+  </g>
+  <g>
+    <rect x="671" y="101.156" fill="#FFFFFF" width="97" height="86"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="768,181.156 768,187.156 762,187.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="749.857" y1="187.156" x2="683.071" y2="187.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="677,187.156 671,187.156 671,181.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="671" y1="170.584" x2="671" y2="112.441"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="671,107.156 671,101.156 677,101.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.1429,12.1429" x1="689.143" y1="101.156" x2="755.929" y2="101.156"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="762,101.156 768,101.156 768,107.156     "/>
+
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="10.5714,10.5714" x1="768" y1="117.727" x2="768" y2="175.87"/>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 719.5 34.5376)" font-family="'MyriadPro-Regular'" font-size="16.6187">Imaginary Flow Axis</text>
+  </svg>
+
 </div>
+
+---
+# Example
+```html
+<div class="box">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+```
+```css
+.box { display: flex }
+.item { border: 1px solid #000; width: 200px }
+```
+## <span class="red">Result</span>
+<span class="box1">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
 ---
 
-# Introduction
+<pre class="medium2 bold" style="text-align:center">
+  flex-direction: row-reverse
+</pre>
+
+
+<div class="container" style="justify-content: center">
+  <span class="box1">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</div>
+
+  ```css
+  .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  ```
+  <h3 class="red center" style="margin-bottom: 15px">Result</h3>
+  <div class="container row-reverse" style="justify-content: center;">
+    <span class="box1-r">
+    <span class="item1">1</span>
+    <span class="item1">2</span>
+    <span class="item1">3</span>
+  </div>
+
+---
+<pre class="medium2 bold" style="text-align:center">
+  flex-direction: column
+</pre>
+```css
+.box { display: flex; flex-direction: column; }
+```
+<h3 class="red center" style="margin-bottom: 15px">Result</h3>
+<span class="box-col">
+  <span class="item-c">1</span>
+  <span class="item-c">2</span>
+  <span class="item-c">3</span>
+</span>
+
+---
+
+<pre class="medium2 bold" style="text-align:center">
+  flex-direction: column-reverse
+</pre>
+```css
+.box { display: flex; flex-direction: column-reverse; }
+```
+<style>
+  .box-col-r {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+</style>
+<h3 class="red center" style="margin-bottom: 15px">Result</h3>
+<span class="box-col-r">
+  <span class="item-c">1</span>
+  <span class="item-c">2</span>
+  <span class="item-c">3</span>
+</span>
 
     </textarea>
     <script src="remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        ratio: '16:9',
+        navigation: {
+           // Enable or disable navigating using scroll
+           // Default: true
+           // Alternatives: false
+           scroll: false
+         },
+         slideNumberFormat: '%current%/%total%',
+         highlightStyle: 'tomorrow'
+      });
     </script>
   </body>
 </html>
