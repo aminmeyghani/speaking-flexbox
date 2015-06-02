@@ -212,6 +212,11 @@ class: center, middle
 </span>
 
 ---
+class: center, middle
+# flex-direction
+<h2>Set <span class="red">flex items</span> direction</h2>
+---
+
 
 <pre class="medium2 bold" style="text-align:center">
   flex-direction: row-reverse
@@ -275,6 +280,101 @@ class: center, middle
   <span class="item-c">2</span>
   <span class="item-c">3</span>
 </span>
+
+---
+class: left, middle
+#`flex-direction`
+```css
+display: flex;
+flex-diection: row | row-reverse | column | column-reverse
+```
+---
+class: center, middle
+# Alignment
+<h2>Set <span class="red">flex items</span> alignments</h2>
+### row: <span class="red">`justify-content`</span>
+### column: <span class="red">`align-items`</span>
+---
+## `row` direction: <span class="red">`justify-content`</span>
+```css
+.box { display: flex; justify-content: center; }
+```
+<style>
+  .box-jc {
+    display: flex;
+    justify-content: center;
+  }
+  .box-jl {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .box-je {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .box-jb {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+<span class="box-jc">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
+```css
+.box { display: flex; justify-content: flex-start }
+```
+<span class="box-jl">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
+```css
+.box { display: flex; justify-content: flex-end }
+```
+<span class="box-je">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
+```css
+.box { display: flex; justify-content: space-between }
+```
+<span class="box-jb">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
+---
+## `column` direction: <span class="red">`align-items`</span>
+```css
+.box { display: flex; align-items: center; }
+```
+
+<span class="box-col">
+  <span class="item1">1</span>
+  <span class="item1">2</span>
+  <span class="item1">3</span>
+</span>
+
+---
+## `column` direction: <span class="red">`align-items`</span>
+```css
+.box { display: flex; align-items: flex-end; }
+```
+<ul class="flex-container flex-end">
+  <li class="flex-item">1<br>2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4<br>5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+
 
     </textarea>
     <script src="remark-latest.min.js">
