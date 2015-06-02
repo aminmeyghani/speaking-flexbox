@@ -3,12 +3,67 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>flexy</title>
+  <title>Speaking Flexbox</title>
   <link rel="stylesheet" href="compiled.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body { font-family: 'Droid Serif'; }
+    h1, h2, h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: normal;
+    }
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+  </style>
 </head>
 
-<body>
-  <h1>Demos</h1>
-</body>
+  <body>
+    <textarea id="source">
 
+class: center, middle
+
+# Title
+
+---
+
+# Agenda
+
+1. Introduction
+2. Deep-dive
+3. ...
+background-image: url(bb.png)
+
+Code:
+
+```ruby
+def add(a,b)
+  a + b
+end
+```
+
+```css
+.container {
+  display: flex;
+}
+```
+<div> <h2>this is html</h2> </div>
+
+<div class="container">
+  <div class="item">x</div>
+  <div class="item">x</div>
+  <div class="item">x</div>
+</div>
+---
+
+# Introduction
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
 </html>
