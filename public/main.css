@@ -35,12 +35,15 @@ body {
 }
 .left-nav {
   background-color: #27ae60;
+  order: 1;
 }
 .main-content {
   background-color: #2980b9;
+  order: -1;
 }
 .right-nav {
   background-color: #9b59b6;
+  order: 0
 }
 .footer {
   background-color: #16a085;

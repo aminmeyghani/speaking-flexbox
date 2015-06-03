@@ -41,12 +41,21 @@ body {
 }
 .left-nav {
   background-color: #27ae60;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 .main-content {
   background-color: #2980b9;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
 }
 .right-nav {
   background-color: #9b59b6;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0
 }
 .footer {
   background-color: #16a085;
