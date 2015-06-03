@@ -25,6 +25,10 @@ body {
   flex-direction: column;
 }
 
+.inner {
+  display: flex;
+}
+
 .header {
   background-color: #000;
 }

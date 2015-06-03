@@ -29,6 +29,12 @@ body {
           flex-direction: column;
 }
 
+.inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   background-color: #000;
 }
