@@ -15,8 +15,32 @@ Mozilla
   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
 */
 
+/*
+  http://www.chriswrightdesign.com/experiments/flexbox-adventures/
+*/
+
+.container {
+  display: flex;
+}
+
 .item {
   border: 1px solid;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.item1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+.item2 {
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+.item3 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
