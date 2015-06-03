@@ -21,7 +21,84 @@ Mozilla
 
 
 .col {
-  background-color: #3498db;
   border-bottom: 1px solid #fff;
   color: white;
+  /*border-right: 1px solid #fff;*/
+}
+.inner {
+  background-color: #3498db;
+  border-right: 1px solid #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+.cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  box-sizing: border-box;
+  padding: 0 10px; /* gutter 10 * 2 */
+}
+
+.col-1 {
+  -webkit-flex: 0 0 8.333333333%;
+      -ms-flex: 0 0 8.333333333%;
+          flex: 0 0 8.333333333%;
+}
+.col-2 {
+  -webkit-flex: 0 0 16.666666667%;
+      -ms-flex: 0 0 16.666666667%;
+          flex: 0 0 16.666666667%;
+}
+.col-3 {
+  -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+.col-4 {
+  -webkit-flex: 0 0 33.333333333%;
+      -ms-flex: 0 0 33.333333333%;
+          flex: 0 0 33.333333333%;
+}
+.col-5 {
+  -webkit-flex: 0 0 41.666666667%;
+      -ms-flex: 0 0 41.666666667%;
+          flex: 0 0 41.666666667%;
+}
+.col-6 {
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.col-7 {
+  -webkit-flex: 0 0 58.333333333%;
+      -ms-flex: 0 0 58.333333333%;
+          flex: 0 0 58.333333333%;
+}
+.col-8 {
+  -webkit-flex: 0 0 66.666666667%;
+      -ms-flex: 0 0 66.666666667%;
+          flex: 0 0 66.666666667%;
+}
+.col-9 {
+  -webkit-flex: 0 0 75%;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+.col-10 {
+  -webkit-flex: 0 0 83.333333333%;
+      -ms-flex: 0 0 83.333333333%;
+          flex: 0 0 83.333333333%;
+}
+.col-11 {
+  -webkit-flex: 0 0 91.666666667%;
+      -ms-flex: 0 0 91.666666667%;
+          flex: 0 0 91.666666667%;
+}
+.col-12 {
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
