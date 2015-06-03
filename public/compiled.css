@@ -31,13 +31,13 @@ Mozilla
 }
 .alert-msg {
   /*border: 1px solid blue;*/
-  padding-left: 10px;
+  /*padding-left: 10px;*/
 }
 .alert-icon {
   /*border: 1px solid orange;*/
-  -webkit-flex: 0 0 50px;
-      -ms-flex: 0 0 50px;
-          flex: 0 0 50px;
+  -webkit-flex: 0 0 70px;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
