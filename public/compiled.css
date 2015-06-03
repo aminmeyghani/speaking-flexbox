@@ -20,11 +20,9 @@ Mozilla
   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
 */
 
-.container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.container li {
-  border: 1px solid;
+.alert-success {
+  border: 1px solid green;
+  padding: 10px;
+  background-color: #e6f7e8;
+  color: green;
 }
