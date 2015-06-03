@@ -15,7 +15,7 @@
       font-family: 'Yanone Kaffeesatz';
       font-weight: normal;
     }
-    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    .remark-code, .remark-inline-code { font-family: 'courier'; }
     .remark-slide-content { background-color: #efede2;}
   </style>
 </head>
@@ -292,8 +292,7 @@ flex-diection: row | row-reverse | column | column-reverse
 class: center, middle
 # Alignment
 <h2>Set <span class="red">flex items</span> alignments</h2>
-### row: <span class="red">`justify-content`</span>
-### column: <span class="red">`align-items`</span>
+<span class="red">`justify-content`</span> and <span class="red">`align-items`</span>
 ---
 ## `row` direction: <span class="red">`justify-content`</span>
 ```css
@@ -353,28 +352,30 @@ class: center, middle
 ---
 ## `column` direction: <span class="red">`align-items`</span>
 ```css
-.box { display: flex; align-items: center; }
+.box { display: flex; align-items: flex-start | flex-end | flex-baseline; }
 ```
-
-<span class="box-col">
-  <span class="item1">1</span>
-  <span class="item1">2</span>
-  <span class="item1">3</span>
-</span>
-
----
-## `column` direction: <span class="red">`align-items`</span>
-```css
-.box { display: flex; align-items: flex-end; }
-```
-<ul class="flex-container flex-end">
+<ul class="flex-container">
   <li class="flex-item">1<br>2</li>
   <li class="flex-item">3</li>
   <li class="flex-item">4<br>5</li>
   <li class="flex-item">6</li>
 </ul>
 
+---
+class: left, middle
+##alignment
 
+```css
+/* horizontally */
+display: flex;
+justify-content: flex-start | flex-end | center | space-around | space-between
+```
+
+```css
+/* vertically */
+display: flex;
+align-items: flex-start | flex-end | center | stretch | baseline
+```
 
     </textarea>
     <script src="remark-latest.min.js">

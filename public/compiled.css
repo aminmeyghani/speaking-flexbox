@@ -6,7 +6,7 @@ h1,h2,h3 {
   margin: 0; padding: 0;
 }
 .hljs.remark-code {
-  font-size: 30px;
+  font-size: 20px;
 }
 .red {
   color: #ca2521;
@@ -149,23 +149,19 @@ Mozilla
   display: -ms-flexbox;
   display: flex;
   float: left;
-}
-.flex-end {
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.flex-end li {
-  background: gold;
+  min-height: 100vh;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .flex-item {
-  background: tomato;
   padding: 5px;
-  width: 50px;
+  width: 100px;
   margin: 5px;
+  border: 1px solid #000;
 
   line-height: 50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
