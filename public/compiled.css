@@ -22,7 +22,7 @@ Mozilla
 
 .alert-success {
   border: 1px solid green;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   background-color: #e6f7e8;
   color: green;
   display: -webkit-flex;
@@ -30,8 +30,22 @@ Mozilla
   display: flex;
 }
 .alert-msg {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
+  padding-left: 10px;
 }
 .alert-icon {
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
+  -webkit-flex: 0 0 50px;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
