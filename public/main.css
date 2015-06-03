@@ -46,12 +46,9 @@ body {
   background-color: #16a085;
 }
 
-.left-nav {
-  flex: 1 0;
+.left-nav, .right-nav {
+  flex: 1 0 50px;
 }
 .main-content {
   flex: 5 0;
-}
-.right-nav {
-  flex: 1 0;
 }
