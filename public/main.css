@@ -27,6 +27,7 @@ body {
 
 .inner {
   display: flex;
+  min-height: 100vh;
 }
 
 .header {
@@ -40,6 +41,9 @@ body {
 }
 .right-nav {
   background-color: #9b59b6;
+}
+.footer {
+  background-color: #16a085;
 }
 
 .left-nav {
