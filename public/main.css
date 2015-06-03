@@ -20,6 +20,10 @@ Mozilla
   padding: 5px;
 }
 
+body {
+  display: flex;
+}
+
 .header {
   background-color: #000;
 }
