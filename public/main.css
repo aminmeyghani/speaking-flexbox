@@ -25,4 +25,11 @@ Mozilla
   padding: 10px;
   background-color: #e6f7e8;
   color: green;
+  display: flex;
+}
+.alert-msg {
+  border: 1px solid blue;
+}
+.alert-icon {
+  border: 1px solid orange;
 }
