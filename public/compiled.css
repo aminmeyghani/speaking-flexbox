@@ -47,3 +47,19 @@ body {
 .right-nav {
   background-color: #9b59b6;
 }
+
+.left-nav {
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+.main-content {
+  -webkit-flex: 5 0;
+      -ms-flex: 5 0;
+          flex: 5 0;
+}
+.right-nav {
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}

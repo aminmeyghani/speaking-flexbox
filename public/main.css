@@ -41,3 +41,13 @@ body {
 .right-nav {
   background-color: #9b59b6;
 }
+
+.left-nav {
+  flex: 1 0;
+}
+.main-content {
+  flex: 5 0;
+}
+.right-nav {
+  flex: 1 0;
+}
