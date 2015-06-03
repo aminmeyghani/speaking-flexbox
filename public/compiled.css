@@ -14,3 +14,9 @@ h1,h2,h3 {
 Mozilla
   https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
 */
+
+.item {
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 5px;
+}
