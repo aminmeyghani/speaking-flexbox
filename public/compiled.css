@@ -32,35 +32,26 @@ Mozilla
 }
 
 .item1 {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
+  /*flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;*/
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0;
 }
 .item2 {
-  -webkit-flex-grow: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
+  /*flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 0;*/
+  -webkit-flex: 2 0 0;
+      -ms-flex: 2 0 0;
+          flex: 2 0 0;
 }
 .item3 {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
+  /*flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;*/
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0;
 }
